@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests
+streamlit>=1.50
+pandas
+numpy
+plotly
