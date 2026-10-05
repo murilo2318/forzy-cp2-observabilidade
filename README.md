@@ -98,6 +98,17 @@ python3.13 scripts/consumo.py
 Se a API estiver em outro endereço, defina `API_URL` antes de rodar o front ou
 o script.
 
+## Versão online (Streamlit Cloud)
+
+(link do Streamlit Cloud)
+
+O Streamlit Cloud executa um único comando, então `frontend/servidor_embutido.py`
+inicia a API FastAPI dentro do mesmo contêiner quando ela não está no ar. O
+front continua consumindo a API por HTTP, via `requests`, com os mesmos headers.
+Rodando localmente com o `uvicorn` em outro terminal, esse módulo não faz nada.
+Na versão online os registros de observabilidade são apagados quando o
+aplicativo reinicia.
+
 ## Vídeo de demonstração
 
 (link do vídeo)

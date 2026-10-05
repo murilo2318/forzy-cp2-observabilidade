@@ -15,6 +15,7 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent))
 import api_client as api  # noqa: E402
+from servidor_embutido import garantir_api  # noqa: E402
 
 # Paleta semantica das Sprints anteriores
 VERDE, AMARELO, VERMELHO, CINZA = "#3FB950", "#D29922", "#F85149", "#8B949E"
@@ -30,6 +31,8 @@ METRICAS = {
 
 st.set_page_config(page_title="Forzy · Sensor Monitoring", page_icon="⚙️", layout="wide")
 
+MODO_API = garantir_api(api.API_URL)
+
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
 SID = st.session_state.session_id
@@ -40,7 +43,7 @@ st.caption("Leitura atual, histórico e observabilidade do provider de Sensores,
 with st.sidebar:
     st.subheader("Contexto da sessão")
     st.text_input("X-Session-Id", SID, disabled=True)
-    st.caption(f"API: {api.API_URL}")
+    st.caption(f"API: {api.API_URL} ({MODO_API})")
     try:
         tags = api.listar_tags(SID)
     except api.ApiError as e:
