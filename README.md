@@ -100,7 +100,7 @@ o script.
 
 ## Versão online (Streamlit Cloud)
 
-(https://forzy-cp2-observabilidade-xoqqktpew5eed9slaegtmp.streamlit.app/)
+https://forzy-cp2-observabilidade-xoqqktpew5eed9slaegtmp.streamlit.app/
 
 O Streamlit Cloud executa um único comando, então `frontend/servidor_embutido.py`
 inicia a API FastAPI dentro do mesmo contêiner quando ela não está no ar. O
