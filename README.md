@@ -112,3 +112,13 @@ aplicativo reinicia.
 ## Vídeo de demonstração
 
 https://youtu.be/rM_0dDVci7c
+
+## Documentação final (Sprint 4)
+
+A documentação final de Front-End & Mobile Development, com a comparação entre a
+Sprint 3 e esta versão, as pendências e a proposta de arquitetura de produção,
+está na pasta `docs/`:
+
+- [Forzy_Sprint4_Documentacao_Final.pdf](docs/Forzy_Sprint4_Documentacao_Final.pdf)
+- [Forzy_Sprint4_Documentacao_Final.docx](docs/Forzy_Sprint4_Documentacao_Final.docx)
+
