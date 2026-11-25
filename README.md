@@ -122,3 +122,21 @@ está na pasta `docs/`:
 - [Forzy_Sprint4_Documentacao_Final.pdf](docs/Forzy_Sprint4_Documentacao_Final.pdf)
 - [Forzy_Sprint4_Documentacao_Final.docx](docs/Forzy_Sprint4_Documentacao_Final.docx)
 
+
+## Escopo da entrega
+
+Este repositório reúne a API de sensores e as telas de Leitura atual, Histórico e Observabilidade. O painel de alertas e as telas de cadastro estão no [repositório da Sprint 3](https://github.com/murilo2318/forzy-sprint3).
+
+## Evidências visuais
+
+### Leitura atual
+
+![Leitura atual do motor MTR-004 em estado crítico, com a tabela de desvios](docs/img/leitura-atual.png)
+
+### Histórico
+
+![Histórico do motor com linhas de limite de atenção e crítico](docs/img/historico.png)
+
+### Observabilidade
+
+![Aba de observabilidade com indicadores, gráficos e tabela por rota](docs/img/observabilidade.png)
